@@ -13,7 +13,7 @@ The project utilizes historical U.S. flight data, which includes key variables s
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone <repository_url>
+   git clone https://github.com/git-qmn/Flight-Delay-Cancellation-Analysis.git
    ```
 2. Install dependencies:
    ```sh
