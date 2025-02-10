@@ -1,0 +1,27 @@
+from matplotlib.ticker import StrMethodFormatter
+from mpl_toolkits.mplot3d import Axes3D
+from pyspark.ml.classification import RandomForestClassifier
+from pyspark.ml.evaluation import BinaryClassificationEvaluator
+from pyspark.ml.evaluation import MulticlassClassificationEvaluator
+from pyspark.ml.feature import VectorAssembler
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
+from pyspark.sql.functions import avg
+from pyspark.sql.functions import col
+from pyspark.sql.functions import col, sum
+from pyspark.sql.functions import col, sum as spark_sum, count as spark_count, to_date, date_format, avg
+from pyspark.sql.functions import col, trim, split
+from pyspark.sql.functions import dayofweek
+from pyspark.sql.functions import dayofweek, month, hour
+from pyspark.sql.functions import hour, avg, concat, lit
+from pyspark.sql.functions import month, avg
+from pyspark.sql.functions import month, count
+from pyspark.sql.functions import to_date
+from pyspark.sql.functions import to_timestamp, col, date_format, when, lpad, concat, lit, split, trim, monotonically_increasing_id
+from pyspark.sql.functions import when
+import matplotlib.cm as cm
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+importances = rf_model.featureImportances.toArray()
